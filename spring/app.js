@@ -22,7 +22,7 @@ function setup() {
 }
 
 function draw() {
-  background('#ffffff');
+  background('#202020');
 
   mousePos.set(mouseX, mouseY);
   target = mousePos;
