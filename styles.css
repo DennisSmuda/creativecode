@@ -11,10 +11,11 @@ body {
 }
 
 .canvas-body {
-  width: 640px;
+  /*width: 640px;
   height: 480px;
   /*margin: 4rem auto;*/
   margin: 0;
+  background-color: #fff;
 }
 
 .mojs-body {
@@ -49,4 +50,41 @@ a:hover {
   text-decoration: none;
 }
 
-a.back-button { color: #fff}
+a.back-button, .description a { color: #fff}
+
+
+
+.description {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: rgba(51,51,51, 0.3);
+  padding: 1.5rem 2rem 1rem;
+}
+
+.description h2 {
+  color: #f1f1f1;
+}
+
+hr {
+  border-color: #f1f1f1;
+  /*border-top: none;*/
+  opacity: 0.2;
+}
+
+.description p {
+}
+
+.description p.instructions {
+  color: #f1f1f1;
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
+
+}
+
+.description p.credits {
+  color: #f1f1f1;
+  opacity: 0.5;
+  font-size: 0.7rem;
+  padding-top: 1rem;
+}
