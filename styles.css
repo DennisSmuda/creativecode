@@ -10,6 +10,10 @@ body {
   margin: 4rem;
 }
 
+body.nocursor {
+  cursor: none;
+}
+
 .canvas-body {
   /*width: 640px;
   height: 480px;

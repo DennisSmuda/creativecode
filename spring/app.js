@@ -19,10 +19,13 @@ function setup() {
 
   drag = 0.75;
   strength = 0.1;
+  colorMode(HSB);
 }
 
 function draw() {
+  // background(0,0,0,);
   background('#202020');
+
 
   mousePos.set(mouseX, mouseY);
   target = mousePos;
@@ -34,6 +37,8 @@ function draw() {
   pos       = pos.add(vel);
 
   // Draw circle
-  fill(214, 71, 150);
+  // fill(214, 71, 150);
+  // console.log(pos.x);
+  fill(pos.x/10, 100, 100);
   ellipse(pos.x,pos.y,r);
 }
