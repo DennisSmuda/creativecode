@@ -10,6 +10,11 @@ body {
   margin: 4rem;
 }
 
+h1 {
+  font-family: 'Rubik';
+  font-weight: 500;
+}
+
 body.nocursor {
   cursor: none;
 }

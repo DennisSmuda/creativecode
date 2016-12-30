@@ -11,6 +11,8 @@
   <!-- <script language="javascript" type="text/javascript" src="app.js"></script> -->
   <!-- this line removes any default padding and style. you might only need one of these values set. -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -52,30 +54,5 @@
 
   </main>
 
-  <script type="text/javascript" src="../vendor/mo.min.js"> </script>
-  <script>
-  $(document).ready(function() {
-
-    const burst = new mojs.Burst({
-      radius: { 0: 360},
-      count: 20,
-      x: -1 * $(window).width()/2,
-      children: {
-        shape: 'cross',
-        stroke: 'teal',
-        angle: {360: 0},
-        radius: { 10: 5},
-        duration: 3000
-      },
-    });
-    $(document.body).click(function() {
-      burst.reset();
-      burst.play();
-    });
-  });
-
-
-
-  </script>
 </body>
 </html>
