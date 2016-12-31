@@ -11,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-  background('#202020');
+  background('#171717');
 
   for (var i = 0; i < movers.length; i++) {
     for (var j = 0; j < movers.length; j++) {
