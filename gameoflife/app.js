@@ -29,7 +29,7 @@ function setup() {
 function draw() {
   nextStep();
   colorMode(HSB);
-  background('#202020');
+  background('#171717');
 
 
   for ( var i = 0; i < cols;i++) {
