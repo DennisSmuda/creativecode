@@ -1,6 +1,6 @@
 body.iso-body {
   margin: 0;
-  padding: 120px;
+  padding: 0 120px;
 
   background-image: radial-gradient(circle, #DDE8B9, #E8D2AE);
 }

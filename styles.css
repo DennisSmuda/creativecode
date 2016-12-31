@@ -23,9 +23,11 @@ h1 {
 }
 
 h2 {
+  padding-top: 1rem;
   font-size: 2rem;
   font-weight: 800;
   color: #fc8f1a;
+  /*text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);*/
 }
 
 body.nocursor {
@@ -131,13 +133,12 @@ hr {
 main {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0;
   flex-wrap: wrap;
 }
 
 .category {
   flex: 0 1 45%;
-  z-index: 999;
+  z-index: 1001;
 
   transform-style: preserve-3d;
   transform: translateZ(3em);
@@ -182,13 +183,28 @@ main {
 
 
 footer {
+  width: 100vw;
+  /*overflow-x: hidden;*/
   z-index: 999;
   position: fixed;
-  background: #e2e2e2;
+  background: #d8d7d7;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 1rem 120px;
   color: #171717;
   text-align: left;
+  /*transform: rotateY(-40deg);*/
+}
+
+footer:before {
+  background: #e2e2e2;
+  content: '';
+  position: absolute;
+  height: 20vw;
+  width: calc(100% + 1rem);
+  left: -1rem;
+  top: -20vw;
+  transform: skew(-60deg);
+  transform-origin: bottom;
 }
